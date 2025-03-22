@@ -20,7 +20,7 @@ const BookingSteps = ({
   ],
 }: BookingStepsProps) => {
   return (
-    <div className="w-full max-w-4xl mx-auto bg-gradient-to-r from-purple-900/80 to-orange-600/80 backdrop-blur-md rounded-lg p-6 border border-white/20 shadow-lg">
+    <div className="w-full max-w-4xl mx-auto bg-black/10 backdrop-blur-md rounded-lg p-6 border border-white/20 shadow-lg">
       <div className="flex items-center justify-between w-full">
         {steps.map((step, index) => (
           <React.Fragment key={step.id}>
@@ -29,7 +29,7 @@ const BookingSteps = ({
                 className={cn(
                   "w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium transition-all duration-200",
                   currentStep > step.id
-                    ? "bg-purple-600 text-white"
+                    ? "bg-orange-500 text-white"
                     : currentStep === step.id
                       ? "bg-orange-500 text-white ring-4 ring-orange-300/50"
                       : "bg-gray-200 text-gray-500",

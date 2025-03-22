@@ -84,12 +84,12 @@ const BookingSystem: React.FC<BookingSystemProps> = ({
 
   return (
     <motion.div
-      className="w-full max-w-4xl mx-auto py-12 px-4 bg-gradient-to-br from-black/40 to-purple-950/30 backdrop-blur-xl rounded-xl border border-purple-500/20 shadow-2xl"
+      className="w-full max-w-4xl mx-auto py-12 px-4 bg-black/20 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent">
+      <h2 className="text-3xl font-bold text-center mb-8 text-white">
         Book Your Car Detailing
       </h2>
 
@@ -121,7 +121,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({
           initial="hidden"
           animate="visible"
         >
-          <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-10 w-10 text-white"
@@ -137,7 +137,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({
               />
             </svg>
           </div>
-          <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent mb-4">
+          <h3 className="text-2xl font-bold text-white mb-4">
             Booking Confirmed!
           </h3>
           <p className="text-gray-200 mb-6">
@@ -150,7 +150,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({
           </p>
           <button
             onClick={() => setIsBookingComplete(false)}
-            className="bg-gradient-to-r from-orange-500 to-purple-600 hover:opacity-90 text-white font-medium py-2 px-6 rounded-lg transition-opacity"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
           >
             Book Another Service
           </button>
